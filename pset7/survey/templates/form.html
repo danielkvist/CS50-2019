@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <hr>
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+
+        <div class="form-group col-6">
+            <label> Name
+                <input name="name" placeholder="Name" autofocus autocomplete="off" type="text" class="form-control" required>
+            </label>
+        </div>
+
+        <div class="form-group col-6">
+            <label>Gender</label><br>
+            <input name="gender" type="radio" value="male" checked>Male
+            <input name="gender" type="radio" value="female">Female
+        </div>
+
+        <div class="form-group col-6">
+            <label>Programming Language</label><br>
+            <select class="form-control" name="language" required>
+                <option selected value="" disabled>Programming Language</option>
+                <option value="Golang">Golang</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+        </select>
+        </div>
+
+        <div class="form-group col-6">
+            <label>
+                <input name="agree" type="checkbox" required>    Agree with the norms of this site about anything.
+            </label>
+        </div>
+
+        <hr>
+
+        <script>
+            // Due to how HTML5 works this form cannot be submitted with empty fields.
+            // So no JavaScript is needed.
+        </script>
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+{% endblock %}

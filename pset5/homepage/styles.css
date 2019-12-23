@@ -1,0 +1,47 @@
+.title {
+    color: lightblue;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 9rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: lightblue;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+    font-size: 2.5rem;
+}
+
+.info {
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: yellow;
+    color: white;
+    text-decoration: underline;
+}
+
+.github {
+    color: gray;
+    font-size: 0.95rem;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.twitter {
+    color: lightblue;
+    font-size: 1.95rem;
+    text-decoration: overline;
+    letter-spacing: 9px;
+    font-weight: 400;
+}
+
+.facebook {
+    color: blue;
+    font-size: 2.25rem;
+    background-color: red;
+    letter-spacing: 1.25px;
+    font-weight: 900;
+}
